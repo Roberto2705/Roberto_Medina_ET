@@ -177,8 +177,10 @@ while True:
                     break
                     
         elif opcion_elegida == 4:
+            print("nop")
 
         elif opcion_elegida == 5:
+            print("nope")
 
         elif opcion_elegida == 6:
             print("Programa finalizado.")
