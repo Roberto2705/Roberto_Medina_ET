@@ -158,4 +158,28 @@ while True:
         
         elif opcion_elegida == 3:
             while True:
+                num = input("Ingrese codigo del plan: ")
+                try:
+                    nuevo_p = int(input("Ingrese nuevo precio: "))
+                    if nuevo_p <= 0:
+                        print("Debe ser un precio mayor a 0")
+                        continue
+                except ValueError:
+                    print("Debe ingresar un numero entero")
+                    continue
+                if actualizar_precio(num, nuevo_p, inscripciones):
+                    print("precio actualizado.")
+                else:
+                    print("El codigo no existe.")
                 
+                resp = input("¿Desea actualizar este precio? (s/n): ").lower()
+                if resp == 'n':
+                    break
+                    
+        elif opcion_elegida == 4:
+
+        elif opcion_elegida == 5:
+
+        elif opcion_elegida == 6:
+            print("Programa finalizado.")
+            break
